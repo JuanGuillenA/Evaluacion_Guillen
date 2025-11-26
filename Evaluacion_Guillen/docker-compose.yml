@@ -1,0 +1,28 @@
+services:
+  nodo-a:
+    build: ./nodo-a
+    container_name: nodo-a
+    ports:
+      - "8080:8080"
+    depends_on:
+      - nodo-b
+    networks:
+      - ringnet
+
+  nodo-b:
+    build: ./nodo-b
+    container_name: nodo-b
+    depends_on:
+      - nodo-c
+    networks:
+      - ringnet
+
+  nodo-c:
+    build: ./nodo-c
+    container_name: nodo-c
+    networks:
+      - ringnet
+
+networks:
+  ringnet:
+    driver: bridge

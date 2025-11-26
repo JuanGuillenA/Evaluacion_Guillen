@@ -1,0 +1,9 @@
+{
+  "name": "nodo-a",
+  "version": "1.0.0",
+  "main": "iniciador.js",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.13.0"
+  }
+}

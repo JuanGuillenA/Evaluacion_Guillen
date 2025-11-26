@@ -1,0 +1,9 @@
+{
+  "name": "nodo-b",
+  "version": "1.0.0",
+  "main": "transformador.js",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.13.0"
+  }
+}

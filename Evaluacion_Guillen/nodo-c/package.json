@@ -1,0 +1,9 @@
+{
+  "name": "nodo-c",
+  "version": "1.0.0",
+  "main": "auditor.js",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.13.0"
+  }
+}
